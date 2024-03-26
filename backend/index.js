@@ -13,7 +13,7 @@ app.get("/todos", async function(req, res){
 
 app.post("/todo",async function(req,res){
     const Createpayload = req.body;
-    const parsedPayload = createTodo.safeparse(Createpayload);
+    const parsedPayload = createTodo.safeParse(Createpayload);
     if(!parsedPayload.success){
         res.status(411).json({msg: "Invalid inputs"});
         return;
