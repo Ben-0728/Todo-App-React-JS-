@@ -1,1 +1,1 @@
-Creating a basic Todo App using Reatc JS.
+Creating a basic Todo App using React JS.
